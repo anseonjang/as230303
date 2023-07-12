@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이름-Live Site</title>
     <link rel="stylesheet" href="./css/style.css">
+    
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
 </head>
 <body>   
     <!-- #wrap>header>.mainMenu>h1.logo+nav.menu -->
@@ -23,6 +33,33 @@
                     <li><a href="#">Q&A</a></li>
                     <li><a href="#">문의사항</a></li>
                 </ul>
+            </nav>
+
+
+<!-- 토글 햄버거버튼 -->
+            <span style="font-size:30px; cursor:pointer"
+ onclick="openNav()">&#9776;</span>
+
+
+            <!-- 토글 x -->
+            <nav class="toggle">
+
+             <!-- x버튼 -->
+             <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" 
+                    onclick="closeNav()">&times;</a>
+                    
+                    <div class="overlay-content">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">레퍼런스</a></li>
+                            <li><a href="#">스튜디오</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                   </div>
+                </div>
+  
             </nav>
         </div>
      </header>
